@@ -1,56 +1,56 @@
 
-interface Shape {
-    String getName();
+public class Shape {
+  public String getName();
 }
 
 
-class Circle implements Shape {
+public class Circle extends Shape {
     @Override
-    public String getName() {
+     public String getName() {
         return "Circle";
     }
 
 }
 
 
-class Quad implements Shape {
+public class Quad extends Shape {
     @Override
-    public String getName() {
+     public String getName() {
         return "Quad";
     }
 
 }
 
 
-class Triangle implements Shape {
+public class Triangle extends Shape {
     @Override
-    public String getName() {
+    public  String getName() {
         return "Triangle";
     }
 
 }
 
 
-class Rectangle implements Shape {
+public class Rectangle extends Shape {
     @Override
-    public String getName() {
+     String getName() {
         return "Rectangle";
     }
 
 }
 
 
-class Cuboid implements Shape {
+public class Cuboid extends Shape {
     @Override
-    public String getName() {
+    public  String getName() {
         return "Cuboid";
     }
 
 }
 
 
-class ShapeNamePrinter {
+public class ShapeNamePrinter {
     static void printShapeName(Shape shape) {
-        System.out.println("Shape name: " + shape.getName());
+        System.out.println(shape.getName());
     }
 }
